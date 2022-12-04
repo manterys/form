@@ -12,7 +12,8 @@ btnTheme.addEventListener('click', () => {
 })
 
 const appHeight = () => {
-    document.body.style.setProperty('--app-height', `${window.innerHeight}px`)
+    const body = document.documentElement
+    body.style.setProperty('--app-height', `${window.innerHeight}px`)
 }
 window.addEventListener('resize', appHeight)
 

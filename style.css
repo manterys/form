@@ -4,7 +4,7 @@
     --white-color: #fff;
     --black-color: #111;
     --gray-color: #979797;
-    --app-height: 100vh;
+    --app-height: 100%;
 }
 
 *, *::before, *::after {
@@ -15,7 +15,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* height: 100vh; */
+    height: 100vh;
+    height: var(--app-height);
     width: 100%;
     display: flex;
     justify-content: center;
