@@ -26,6 +26,10 @@ body {
     transition: all .5s ease;
 }
 
+html {
+    background-color: var(--black-color);
+}
+
 body.darkTheme {
     color: var(--white-color);
     background-color: var(--black-color);
