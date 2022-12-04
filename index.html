@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <!-- Title -->
+    <title>Form</title>
+</head>
+<body>
+    <!-- Theme Button -->
+    <button id="btn-theme">Dark Theme</button>
+        
+    <!-- Form -->
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
+        <div class="form-element">
+            <input type="text" required>
+            <label>Imię:</label>
+        </div>
+        <div class="form-element">
+            <input type="text" required>
+            <label>Nazwisko:</label>
+        </div>
+        <div class="form-element">
+            <input type="text" required>
+            <label>E-mail:</label>
+        </div>
+        <div class="form-element">
+            <textarea placeholder="Wiadomość.." required></textarea>
+        </div>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
