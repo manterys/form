@@ -11,10 +11,9 @@ btnTheme.addEventListener('click', () => {
     }
 })
 
-let theme = localStorage.getItem('theme')
-
-if (theme == null) {
-    setTheme('light')
-} else {
-    setTheme(theme)
+const appHeight = () => {
+    document.body.style.setProperty('--app-height', `${window.innerHeight}px`)
 }
+window.addEventListener('resize', appHeight)
+
+appHeight()
