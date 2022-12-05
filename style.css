@@ -79,7 +79,7 @@ input, textarea {
     border: none;
     background-color: transparent;
     border-bottom: 1px solid var(--gray-color);
-    padding: 5px 0;
+    padding-bottom: 5px;
     width: 100%;
     color: var(--black-color);
 }
@@ -107,7 +107,7 @@ textarea:focus {
 label {
     position: absolute;
     pointer-events: none;
-    top: -5px;
+    top: -3px;
     left: 0;
     transition: all .4s ease;
 }
@@ -159,7 +159,7 @@ input[type="submit"]:hover {
     
     .form-element {
         width: 450px;
-        margin-bottom: 1.2rem;
+        margin-bottom: .5rem;
     }
 }
 @media (min-height: 700px) {
