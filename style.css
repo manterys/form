@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
     --white-color: #fff;
     --black-color: #111;
-    --gray-color: #979797;
+    --gray-color: #999;
     --app-height: 100%;
 }
 
@@ -24,10 +24,6 @@ body {
     color: var(--black-color);
     background-color: var(--white-color);
     transition: all .5s ease;
-}
-
-html {
-    background-color: var(--black-color);
 }
 
 body.darkTheme {
@@ -77,6 +73,7 @@ input, textarea {
     -webkit-appearance: none;
     border-radius: 0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     outline: none;
     border: none;
@@ -149,4 +146,34 @@ input[type="submit"]:hover {
     background-color: transparent;
     border-color: var(--white-color);
     color: var(--ligh-color);
+}
+
+/* Media Queries */
+@media (max-width: 800px) and (orientation: landscape) {
+    body {
+        align-items: flex-end;
+    }
+    input[type="submit"] {
+        margin-top: 0;
+    }
+    form {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+    
+    .form-element {
+        width: 450px;
+        margin-bottom: 1.2rem;
+    }
+}
+@media (min-height: 700px) {
+    .form-element {
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 801px) {
+    .form-element {
+        width: 600px;
+        margin-bottom: 3rem;
+    }
 }
