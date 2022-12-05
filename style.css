@@ -150,15 +150,11 @@ input[type="submit"]:hover {
 
 /* Media Queries */
 @media (max-width: 800px) and (orientation: landscape) {
-    body {
-        align-items: flex-end;
-    }
     input[type="submit"] {
         margin-top: 0;
     }
     form {
-        margin-top: 0;
-        margin-bottom: 1rem
+        margin-top: 3rem;
     }
     
     .form-element {
