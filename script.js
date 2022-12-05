@@ -16,9 +16,9 @@ const appTheme = () => {
 appTheme()
 
 // 100vh iOS
-const appFullHeight = () => {
+const appHeight = () => {
     const body = document.documentElement
     body.style.setProperty('--app-height', `${window.innerHeight}px`)
-    window.addEventListener('resize', appHeight)
 }
-appFullHeight()
+window.addEventListener('resize', appHeight)
+appHeight()
